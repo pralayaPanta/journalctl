@@ -1,0 +1,92 @@
+baseURL = "https://journalctl.io/"
+title = "JournalCTL"
+theme = "blowfish"
+locale = "en-AU"
+
+enableRobotsTXT = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true                       # ALLOWS RAW HTML in markdown (required for homepage buttons)
+  [markup.highlight]
+    noClasses = false                     # REQUIRED for Blowfish copy buttons & styling
+
+[params]
+  colorScheme = "blowfish"
+  defaultAppearance = "dark"
+  autoSwitchAppearance = true
+  enableSearch = true
+  enableCodeCopy = true
+  showScrollToTop = true
+  smartTOC = true                         # highlights active section in right TOC sidebar as you scroll
+  smartTOCHideUnfocusedChildren = true    # keeps TOC clean by auto-collapsing inactive sub-items
+  mainSections = ["posts"]
+
+  [params.homepage]
+    layout = "page"
+    showRecent = true
+    showRecentItems = 5
+    showMoreLink = true
+    showMoreLinkDest = "/posts"
+    cardView = false
+
+  [params.author]
+    name = "Pralaya Panta"
+    headline = "Technical Consultant | MCT | MSISE"
+    bio = "M365, Azure, Security & PowerShell. Currently completing MSISE at SANS Technology Institute."
+    image = ""   # set to "img/author.jpg" after adding photo to assets/img/
+
+  [[params.author.links]]
+    linkedin = "https://linkedin.com/in/pralayapanta"
+
+  [[params.author.links]]
+    github = "https://github.com/pralayaPanta"
+
+  [params.article]
+    showDate = true
+    showAuthor = false
+    showReadingTime = true
+    showWordCount = false
+    showTableOfContents = true
+    showCodeCopy = true                    # enables copy button on code blocks
+    showBreadcrumbs = true
+    showHero = true                       # shows image at top of post page automatically
+    heroStyle = "basic"                   # site-wide default: prominent hero header image on posts
+    showZenMode = true #Renders a button on article pages click to enter/exit zen mode.
+    showAuthorsBadges = true
+    sharingLinks = ["linkedin", "bluesky", "reddit", "email", "copy"]
+    showSeries = "top"        # options: "top", "bottom", true (both), false (none)
+    seriesOpened = false       # keeps series navigation box expanded by default
+    showTaxonomies = true
+    showTags = true
+    showComments = true
+
+  [params.list]
+    showCards = true
+    showSummary = true                    # displays post summary text on card/list views
+    groupByYear = false
+    layoutBackgroundBlur = true           # premium blur aesthetic
+
+[[menu.main]]
+  name = "Blog"
+  pageRef = "posts"
+  weight = 10
+
+[[menu.main]]
+  name = "About"
+  pageRef = "about"
+  weight = 20
+
+[[menu.main]]
+  weight = 30
+  [menu.main.params]
+    action = "search"

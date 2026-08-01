@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Exclude internal search JSON
+Disallow: /index.json
+
+# Sitemap Location
+Sitemap: {{ "sitemap.xml" | absURL }}
