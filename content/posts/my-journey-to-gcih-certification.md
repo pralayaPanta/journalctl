@@ -48,6 +48,8 @@ Building a custom Google Sheets index was the single most important preparation 
 | **Description** | Concise summary of the concept |
 | **Command / Syntax** | Exact command line syntax and flags |
 
+Full Strategy here: [How to Build a GIAC Index That Actually Works](/posts/giac-indexing-system.md)
+
 ## Exam Day Retrospective & Key Takeaways
 
 1. **Time Management:** Keep moving. Don't spend more than 2 minutes on a multiple-choice question before flagging or looking up in your index.
