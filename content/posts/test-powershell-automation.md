@@ -1,5 +1,5 @@
 ﻿---
-title: "Automating Entra ID Stale Account Cleanup with PowerShell"
+title: "Automating Entra ID Stale Account Cleanup with PowerShell Test Post"
 date: 2026-07-31T08:14:30+10:00
 draft: true
 slug: "test-powershell-automation"

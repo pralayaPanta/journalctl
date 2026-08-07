@@ -5,7 +5,7 @@ draft: false
 slug: "giac-indexing-system"
 description: "A proven 4-phase GIAC indexing system used to score 90%+ on GSEC, GCIH, and GSTRT exams."
 categories: [""]
-tags: ["GIAC", "SANS", "SANS MSISE Journey"]
+tags: ["GIAC", "SANS MSISE Journey"]
 series: ["SANS MSISE Journey"]
 series_order: 1
 featureimage: "images/posts/giac-indexing-system.jpg"

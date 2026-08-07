@@ -5,7 +5,7 @@ draft: false
 slug: "my-journey-to-gcih-certification"
 description: "How I prepared for and passed the SANS GCIH (SEC504) Incident Handler certification with 90%+ score."
 categories: [""]
-tags: ["GIAC", "GCIH", "Incident Response", "SANS MSISE Journey"]
+tags: ["GIAC", "GCIH", "SANS MSISE Journey"]
 series: ["SANS MSISE Journey"]
 series_order: 2
 featureimage: "images/posts/my-journey-to-gcih-certification.jpg"
