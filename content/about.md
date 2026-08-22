@@ -4,7 +4,7 @@ date: 2026-07-27
 draft: false
 ---
 
-Technical Consultant at Mangano IT, based in Brisbane, Australia.
+Technical Consultant, based in Brisbane, Australia.
 
 MCT (Microsoft Certified Trainer) since 2021. Currently completing an MSISE at SANS Technology Institute with a 4.0 GPA.
 

@@ -4,8 +4,8 @@ date: 2026-03-15T09:50:35+10:00
 draft: false
 slug: "powershell-help-system"
 description: "Master Get-Help, Get-Command, and About_ articles to find any cmdlet and syntax without leaving your terminal."
-categories: ["PowerShell"]
-tags: ["PowerShell", "Help System", "CLI"]
+categories: [""]
+tags: ["PowerShell"]
 series: ["PowerShell Basics"]
 series_order: 2
 featureimage: "images/posts/powershell-help-system.jpg"
@@ -55,11 +55,11 @@ Get-Help -Name Get-Service
 ```
 
 The output is structured into key sections:
-- **NAME** â€” The command name
-- **SYNOPSIS** â€” One-line summary
-- **SYNTAX** â€” Available parameter sets
-- **DESCRIPTION** â€” Detailed explanation
-- **RELATED LINKS** â€” Online documentation & related cmdlets
+- **NAME**  The command name
+- **SYNOPSIS**  One-line summary
+- **SYNTAX**  Available parameter sets
+- **DESCRIPTION**  Detailed explanation
+- **RELATED LINKS**  Online documentation & related cmdlets
 
 ### 1. Viewing Full Documentation
 ```powershell

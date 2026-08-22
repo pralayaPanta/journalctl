@@ -5,7 +5,7 @@ draft: false
 slug: "giac-indexing-system"
 description: "A proven 4-phase GIAC indexing system used to score 90%+ on GSEC, GCIH, and GSTRT exams."
 categories: [""]
-tags: ["GIAC", "SANS MSISE Journey"]
+tags: ["GIAC", "SANS", "SANS MSISE Journey"]
 series: ["SANS MSISE Journey"]
 series_order: 1
 featureimage: "images/posts/giac-indexing-system.jpg"
@@ -16,11 +16,11 @@ featureimage: "images/posts/giac-indexing-system.jpg"
 > - A proven 4-phase indexing workflow (Read, Capture, Refine, Test) used to score 90%+ on GSEC and GCIH.
 > - Focus on high-value keywords, exact command syntaxes, and book page numbers over long summaries.
 
-Open-book sounds like a gift. In practice, it isn't â€” not if you haven't built a proper GIAC index before walking in.
+Open-book sounds like a gift. In practice, it isn't; not if you haven't built a proper GIAC index before walking in.
 
 GIAC exams are timed, scenario-heavy, and cover material spread across five or more books. If you're stopping to flip through a book every few questions, you'll run out of time long before you run out of questions. As a result, the open-book format rewards people who built an index, not people who skimmed the material and assumed they could just look things up.
 
-I've sat two GIAC exams â€” GSEC and GCIH â€” scored 90%+ on both, and used the same indexing system for both. This is that system. I'm currently building the index for GSTRT, and the workflow is unchanged.
+I've sat two GIAC exams - GSEC and GCIH - scored 90%+ on both, and used the same indexing system for both. This is that system. I'm currently building the index for GSTRT, and the workflow is unchanged.
 
 ## Why a Good GIAC Index Changes Everything
 
@@ -65,4 +65,3 @@ Alphabetize A-Z, format for clean printing with column header rows on every page
 ## Wrapping Up
 
 The index doesn’t replace knowing the material — it extends what you can reliably recall under time pressure. Build it seriously, test it twice, and walk into exam day knowing exactly where to find anything you might need. I’ve used this system for GSEC and GCIH. I’m using it again for GSTRT, and the format is unchanged — only the content is different.
-

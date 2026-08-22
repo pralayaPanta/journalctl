@@ -4,8 +4,8 @@ date: 2026-02-05T10:33:22+10:00
 draft: false
 slug: "get-started-with-powershell"
 description: "Configure a modern PowerShell 7.4+ environment with Windows Terminal, Winget, and PSReadLine."
-categories: ["PowerShell"]
-tags: ["PowerShell", "Windows Terminal", "Setup"]
+categories: [""]
+tags: ["PowerShell",]
 series: ["PowerShell Basics"]
 series_order: 1
 featureimage: "images/posts/get-started-with-powershell.jpg"
