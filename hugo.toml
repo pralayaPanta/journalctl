@@ -5,6 +5,10 @@ locale = "en-AU"
 
 enableRobotsTXT = true
 
+[services]
+  [services.googleAnalytics]
+    ID = "G-XFLPFF5XW4"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
@@ -90,3 +94,5 @@ enableRobotsTXT = true
   weight = 30
   [menu.main.params]
     action = "search"
+
+
