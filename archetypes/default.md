@@ -7,6 +7,7 @@ categories: ["Blog"]
 description: ""
 slug: '{{ .File.ContentBaseName }}'
 featureimage: "images/posts/{{ .File.ContentBaseName }}.jpg"
+featureimageAlt: "{{ replace .File.ContentBaseName "-" " " | title }} image"
 featureimagecaption: ""
 ---
 

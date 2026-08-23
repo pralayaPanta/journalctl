@@ -12,6 +12,17 @@ enableRobotsTXT = true
 [params.verification]
   google = "9K8pfYKSIKxs5nfSEhdHTShSW2HMYMVcSC222UK0Dwo"
 
+[params]
+  description = "Technical blog by Pralaya Panta covering PowerShell automation, Microsoft 365, Azure, Entra ID, Security &  SANS MSISE."
+
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
+  excludedKinds = ["taxonomy", "term"]
+
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 

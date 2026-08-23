@@ -2,6 +2,7 @@
 title: "About"
 date: 2026-07-27
 draft: false
+description: "About Pralaya Panta — Technical Consultant, MCT, SANS MSISE Graduate Student."
 ---
 
 Technical Consultant, based in Brisbane, Australia.

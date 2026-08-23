@@ -9,6 +9,7 @@ tags: ["PowerShell"]
 series: ["PowerShell Basics"]
 series_order: 2
 featureimage: "images/posts/powershell-help-system.jpg"
+featureimageAlt: "PowerShell Get-Help command syntax diagram and help system architecture"
 ---
 
 > **TL;DR**
