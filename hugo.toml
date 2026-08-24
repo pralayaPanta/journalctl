@@ -78,11 +78,12 @@ enableRobotsTXT = true
     showZenMode = true #Renders a button on article pages click to enter/exit zen mode.
     showAuthorsBadges = true
     sharingLinks = ["linkedin", "bluesky", "reddit", "email", "copy"]
-    showSeries = "top"        # options: "top", "bottom", true (both), false (none)
-    seriesOpened = false       # keeps series navigation box expanded by default
+    showSeries = "top"                    # options: "top", "bottom", true (both), false (none)
+    seriesOpened = false                  # keeps series navigation box expanded by default
     showTaxonomies = true
     showTags = true
     showComments = true
+    showRelatedContent = true             # Auto-recommends related articles based on tags & categories
 
   [params.list]
     showCards = true
