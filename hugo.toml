@@ -35,6 +35,7 @@ enableRobotsTXT = true
 [params]
   colorScheme = "blowfish"
   defaultAppearance = "dark"
+  enableA11y = true                     # Adds accessibility & high-contrast toggle to header
   autoSwitchAppearance = true
   enableSearch = true
   enableCodeCopy = true
