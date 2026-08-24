@@ -22,7 +22,6 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
   excludedKinds = ["taxonomy", "term"]
 
-
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
