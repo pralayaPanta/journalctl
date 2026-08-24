@@ -1,0 +1,60 @@
+{{ define "main" }}
+<div class="max-w-3xl mx-auto px-4 py-16 text-center">
+  <!-- Prominent 404 Header Badge -->
+  <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-500 font-mono text-xs font-bold uppercase tracking-wider mb-6 shadow-sm">
+    <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+    <span>HTTP 404 — Resource Not Found</span>
+  </div>
+
+  <div class="terminal-window rounded-xl overflow-hidden border border-neutral-700 bg-[#0c1017] text-left font-mono text-sm shadow-2xl">
+    <!-- Terminal Title Bar -->
+    <div class="flex items-center justify-between px-4 py-3 bg-[#161b22] border-b border-neutral-700/80">
+      <div class="flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-[#ff5f56] inline-block shadow-sm"></span>
+        <span class="w-3 h-3 rounded-full bg-[#ffbd2e] inline-block shadow-sm"></span>
+        <span class="w-3 h-3 rounded-full bg-[#27c93f] inline-block shadow-sm"></span>
+        <span class="text-xs text-neutral-400 font-semibold ml-3 tracking-wide select-none">pwsh.exe — Administrator: Windows PowerShell</span>
+      </div>
+      <span class="text-xs text-red-400 font-bold px-2.5 py-0.5 rounded bg-red-950/80 border border-red-800 text-[11px] select-none">ERROR 404</span>
+    </div>
+
+    <!-- Terminal Body -->
+    <div class="p-6 md:p-8 space-y-5">
+      <!-- Executed Command (Sanitized & Truncated) -->
+      <div class="flex flex-wrap items-center gap-2 font-bold text-neutral-100">
+        <span class="text-emerald-400 select-none">PS C:\journalctl.io&gt;</span>
+        <code class="text-neutral-200 break-all bg-neutral-800/60 px-2 py-0.5 rounded text-xs">Get-Item -LiteralPath "{{ .Permalink | htmlEscape | truncate 120 }}"</code>
+      </div>
+
+      <!-- PowerShell Error Stream -->
+      <div class="p-4 rounded-lg bg-red-950/30 border border-red-900/50 text-red-400 text-xs font-mono leading-relaxed space-y-1.5 shadow-inner">
+        <p class="font-bold text-red-300">
+          Get-Item : Cannot find path '{{ .Permalink | htmlEscape | truncate 120 }}' because it does not exist.
+        </p>
+        <p class="text-neutral-400 select-none">
+          At line:1 char:1<br>
+          + Get-Item -LiteralPath "{{ .Permalink | htmlEscape | truncate 80 }}"<br>
+          + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        </p>
+        <p class="text-neutral-400 font-mono text-[11px]">
+          + CategoryInfo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ObjectNotFound: ({{ .Permalink | htmlEscape | truncate 60 }}:String) [Get-Item], ItemNotFoundException<br>
+          + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+        </p>
+      </div>
+
+      <!-- Suggested Remediation Button -->
+      <div class="pt-2">
+        <p class="text-xs text-neutral-400 mb-3 select-none">
+          # Remediation: Execute Set-Location back to root directory
+        </p>
+        
+        <a href="https://journalctl.io/" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-primary-600 hover:bg-primary-500 active:bg-primary-700 text-white text-xs font-bold font-mono no-underline transition-all transform hover:-translate-y-0.5 shadow-lg shadow-primary-900/30 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-neutral-900">
+          <span class="text-emerald-300 font-extrabold text-sm">&gt;</span>
+          <span class="tracking-wide">Set-Location "https://journalctl.io/"</span>
+          <span class="text-[10px] px-2 py-0.5 rounded bg-primary-700/80 text-primary-100 uppercase tracking-wider font-sans font-semibold">Home</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
