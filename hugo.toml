@@ -83,7 +83,8 @@ enableRobotsTXT = true
     showTaxonomies = true
     showTags = true
     showComments = true
-    showRelatedContent = true             # Auto-recommends related articles based on tags & categories
+    showRelatedContent = false           # Set to false to disable, or true to enable
+    relatedContentLimit = 3              # REQUIRED: Number of related articles (prevents nil first error)
 
   [params.list]
     showCards = true
