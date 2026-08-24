@@ -4,6 +4,9 @@ theme = "blowfish"
 locale = "en-AU"
 
 enableRobotsTXT = true
+[services]
+  [services.googleAnalytics]
+    ID = "G-XFLPFF5XW4"
 
 [sitemap]
   changefreq = "weekly"
