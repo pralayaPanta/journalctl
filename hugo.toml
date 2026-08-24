@@ -5,17 +5,6 @@ locale = "en-AU"
 
 enableRobotsTXT = true
 
-[services]
-  [services.googleAnalytics]
-    ID = "G-XFLPFF5XW4"
-
-[params.verification]
-  google = "9K8pfYKSIKxs5nfSEhdHTShSW2HMYMVcSC222UK0Dwo"
-
-[params]
-  description = "Technical blog by Pralaya Panta covering PowerShell automation, Microsoft 365, Azure, Entra ID, Security &  SANS MSISE."
-
-
 [sitemap]
   changefreq = "weekly"
   priority = 0.8
