@@ -1,8 +1,23 @@
 User-agent: *
 Allow: /
 
-# Exclude internal search JSON
+# Exclude internal search JSON, standalone 404 page & raw data feeds
 Disallow: /index.json
+Disallow: /404.html
+Disallow: /*.json$
+
+# AI Search & Citation Engines (Explicitly Allowed for Backlinks & Reach)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+Allow: /
+
+# Aggressive Bulk Scrapers (Blocked to Protect Bandwidth & Crawl Health)
+User-agent: Bytespider
+User-agent: CCBot
+Disallow: /
 
 # Sitemap Location
 Sitemap: {{ "sitemap.xml" | absURL }}

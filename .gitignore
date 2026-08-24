@@ -13,7 +13,6 @@ dist/
 node_modules/
 .lighthouseci/
 test-results/
-playwright-report/
 .env
 *.sh
 !.github/scripts/*.sh
