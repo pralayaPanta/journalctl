@@ -18,7 +18,7 @@ enableRobotsTXT = true
   excludedKinds = ["taxonomy", "term"]
 
 [outputs]
-  home = ["HTML", "RSS", "JSON", "llmsTxt"]
+  home = ["HTML", "RSS", "JSON"]
 
 [taxonomies]
   tag = "tags"
