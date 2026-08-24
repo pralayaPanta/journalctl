@@ -42,6 +42,7 @@ enableRobotsTXT = true
   smartTOC = true                         # highlights active section in right TOC sidebar as you scroll
   smartTOCHideUnfocusedChildren = true    # keeps TOC clean by auto-collapsing inactive sub-items
   mainSections = ["posts"]
+  enableStructuredBreadcrumbs = true     # Emits Schema.org BreadcrumbList JSON-LD for rich Google & Bing search breadcrumbs
   description = "Technical blog by Pralaya Panta covering PowerShell automation, Microsoft 365, Azure, Entra ID, Security & SANS MSISE."
 
   [params.homepage]
